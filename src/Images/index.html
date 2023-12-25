@@ -3,84 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tasks</title>
-    <link rel="stylesheet" href="/UGR-7382-14/src/css/styles.css" />
+    <title>About</title>
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
   </head>
-  <body>
-    <header class="site-header">
-      <div class="logo-container">
-        <a href="index.html" class="home-link">
-          <img src="logo.png" alt="Logo" class="logo-image" />
-        </a>
-      </div>
-      <nav class="site-navigation">
-        <ul>
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="tasks.html" class="nav-link">Tasks</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-          <li><a href="muse.html" class="nav-link">Muse</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main id="main-content-index">
-      <div class="card">
-        <section id="home-section">
-          <div class="left-column">
-            <h2 id="home-title">Welcome to my World!</h2>
-            <img src="me.jpg" alt="A picture of me" id="home-image" />
-          </div>
-          <div class="right-column">
-            <p>
-              I'm Ruhama Yohannes, a junior software engineer driven by a
-              passion for technology and a commitment to excellence.<br />
-              My journey in the tech industry has been marked by continuous
-              learning, innovative thinking, and effective collaboration.<br />
-              My expertise spans across various facets of software engineering,
-              including web development, software design, and problem-solving.
-              <br />I take pride in my ability to translate complex requirements
-              into functional and user-friendly solutions. <br />
-              Explore my website to learn more about my projects, experiences,
-              and the skills that I bring to the table. Whether you're looking
-              for a collaborator on an exciting project or just want to discuss
-              technology and its impacts, feel free to reach out.
-            </p>
-          </div>
-        </section>
+  <body class="bg-light">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm"
+      style="padding-top: 1rem; padding-bottom: 1rem"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="logo.png" alt="Logo" height="48" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item px-2">
+              <a class="nav-link text-dark" href="index.html">Home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-dark" href="about.html">About</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-dark" href="tasks.html">Tasks</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-dark" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-dark" href="muse.html">Muse</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="py-8">
+      <div class="custom-main-container">
+        <article class="py-6">
+          <section>
+            <div class="row align-items-center">
+              <!-- Added align-items-center to vertically center the content -->
+              <div class="col-12 col-md-4 p-5">
+                <!-- Added padding with p-3 -->
+                <img
+                  src="me.jpg"
+                  alt="A picture of me"
+                  class="rounded img-fluid"
+                />
+              </div>
+
+              <div
+                class="col-12 col-md-8 p-5 d-flex flex-column justify-content-center"
+              >
+                <!-- Added padding with p-3 and flex utilities -->
+                <div>
+                  <h4 class="custom-title">Welcome to my World!</h4>
+                  <p>
+                    I'm Ruhama Yohannes, a junior software engineer driven by a
+                    passion for technology and a commitment to excellence. My
+                    journey in the tech industry has been marked by continuous
+                    learning, innovative thinking, and effective collaboration.
+                    My expertise spans across various facets of software
+                    engineering, including web development, software design, and
+                    problem-solving. I take pride in my ability to translate
+                    complex requirements into functional and user-friendly
+                    solutions. Explore my website to learn more about my
+                    projects, experiences, and the skills that I bring to the
+                    table. Whether you're looking for a collaborator on an
+                    exciting project or just want to discuss technology and its
+                    impacts, feel free to reach out.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
       </div>
     </main>
 
-    <footer class="site-footer">
-      <div class="social-media-links">
-        <a
-          href="https://t.me/rurudaya"
-          class="telegram-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="telegram-icon.jpg" alt="Telegram" class="social-icon" />
-        </a>
-        <a
-          href="https://github.com/ruhamayohannes"
-          class="github-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="github-icon.jpg" alt="GitHub" class="social-icon" />
-        </a>
-        <a
-          href="https://X.com/rurudaya"
-          class="x-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="x-icon.png" alt="X Profile" class="social-icon" />
-        </a>
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <div class="mb-3 d-flex justify-content-center">
+          <a
+            href="https://t.me/rurudaya"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mx-2"
+          >
+            <img src="telegram-icon.jpg" alt="Telegram" height="24" />
+          </a>
+          <a
+            href="https://github.com/ruhamayohannes"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mx-2"
+          >
+            <img src="github-icon.jpg" alt="GitHub" height="24" />
+          </a>
+          <a
+            href="https://X.com/rurudaya"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mx-2"
+          >
+            <img src="x-icon.png" alt="X Profile" height="24" />
+          </a>
+        </div>
+        <p>&copy; 2023 Ruhama Yohannes, All rights reserved.</p>
       </div>
-      <p class="copyright-text">
-        &copy; 2023 Ruhama Yohannes, All rights reserved.
-      </p>
     </footer>
+
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/script.js"></script>
   </body>
 </html>

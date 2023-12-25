@@ -3,135 +3,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tasks</title>
-    <link rel="stylesheet" href="/UGR-7382-14/src/css/styles.css" />
+    <title>Muse</title>
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
   </head>
-  <body>
-    <header class="site-header">
-      <div class="logo-container">
-        <a href="index.html" class="home-link">
-          <img src="logo.png" alt="Logo" class="logo-image" />
-        </a>
-      </div>
-      <nav class="site-navigation">
-        <ul>
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="tasks.html" class="nav-link">Tasks</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-          <li><a href="muse.html" class="nav-link">Muse</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main id="main-content-muse">
-      <section id="muse-section">
-        <h1 id="muse-title">Creative Inspirations and Musings</h1>
-        <div class="carousel-container">
-          <div class="carousel">
-            <div class="carousel-slide" id="carousel-muse-1">
+  <body class="bg-light">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm"
+      style="padding-top: 1rem; padding-bottom: 1rem"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="logo.png" alt="Logo" height="48" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item px-2">
+              <a class="nav-link text-dark" href="index.html">Home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-dark" href="about.html">About</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-dark" href="tasks.html">Tasks</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-dark" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-dark" href="muse.html">Muse</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main-content-muse" class="py-5">
+      <section class="container">
+        <h1 id="muse-title" class="text-left font-weight-bold mb-4">
+          Creative Inspirations and Musings
+        </h1>
+
+        <div id="museCarousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
               <object
                 data="https://www.youtube.com/embed/RzkD_rTEBYs"
                 type="text/html"
-                class="carousel-image"
+                class="d-block w-100"
+                style="height: 500px"
               >
-                <param
-                  name="src"
-                  value="https://www.youtube.com/embed/RzkD_rTEBYs"
-                />
-                <param name="title" value="Inspiring Tech Talk" />
-                <param name="frameborder" value="0" />
-                <param
-                  name="allow"
-                  value="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                />
-                <param name="allowfullscreen" value="true" />
                 <p>
-                  This browser does not support the object tag. Please install a
-                  modern browser to view the content.
+                  This browser does not support the object tag. Please use a
+                  modern browser.
                 </p>
               </object>
-              <div class="carousel-text">
-                <h2>Inspiring Tech Talk</h2>
-                <p>
-                  A captivating tech talk that discusses the future of AI and
-                  its impact on society.
-                </p>
-              </div>
             </div>
 
-            <div class="carousel-slide" id="carousel-muse-2">
+            <div class="carousel-item">
               <object
                 data="https://www.youtube.com/embed/wLlL46pYcg4"
                 type="text/html"
-                class="carousel-image"
+                class="d-block w-100"
+                style="height: 500px"
               >
-                <param
-                  name="src"
-                  value="https://www.youtube.com/embed/wLlL46pYcg4"
-                />
-                <param
-                  name="title"
-                  value="Documentary on Software Innovation"
-                />
-                <param name="frameborder" value="0" />
-                <param
-                  name="allow"
-                  value="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                />
-                <param name="allowfullscreen" value="true" />
                 <p>
-                  This browser does not support the object tag. Please install a
-                  modern browser to view the content.
+                  This browser does not support the object tag. Please use a
+                  modern browser.
                 </p>
               </object>
-              <div class="carousel-text">
-                <h2>Documentary on Software Innovation</h2>
-                <p>
-                  An inspiring documentary that delves into software innovations
-                  that changed the world.
-                </p>
-              </div>
             </div>
           </div>
-          <div class="carousel-controls">
-            <button class="carousel-control prev">← Prev</button>
-            <button class="carousel-control next">Next →</button>
-          </div>
+          <a
+            class="carousel-control-prev"
+            href="javascript:void(0);"
+            onclick="moveSlideMuse(-1)"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="javascript:void(0);"
+            onclick="moveSlideMuse(1)"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </a>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="social-media-links">
-        <a
-          href="https://t.me/rurudaya"
-          class="telegram-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="telegram-icon.jpg" alt="Telegram" class="social-icon" />
-        </a>
-        <a
-          href="https://github.com/ruhamayohannes"
-          class="github-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="github-icon.jpg" alt="GitHub" class="social-icon" />
-        </a>
-        <a
-          href="https://X.com/rurudaya"
-          class="x-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="x-icon.png" alt="X Profile" class="social-icon" />
-        </a>
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <div class="mb-3 d-flex justify-content-center">
+          <a
+            href="https://t.me/rurudaya"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mx-2"
+          >
+            <img src="telegram-icon.jpg" alt="Telegram" height="24" />
+          </a>
+          <a
+            href="https://github.com/ruhamayohannes"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mx-2"
+          >
+            <img src="github-icon.jpg" alt="GitHub" height="24" />
+          </a>
+          <a
+            href="https://X.com/rurudaya"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mx-2"
+          >
+            <img src="x-icon.png" alt="X Profile" height="24" />
+          </a>
+        </div>
+        <p>&copy; 2023 Ruhama Yohannes, All rights reserved.</p>
       </div>
-      <p class="copyright-text">
-        &copy; 2023 Ruhama Yohannes, All rights reserved.
-      </p>
     </footer>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/script.js"></script>
   </body>
 </html>

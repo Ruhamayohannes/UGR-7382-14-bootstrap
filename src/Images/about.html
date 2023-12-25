@@ -3,131 +3,155 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tasks</title>
-    <link rel="stylesheet" href="/UGR-7382-14/src/css/styles.css" />
+    <title>About</title>
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
   </head>
-  <body>
-    <header class="site-header">
-      <div class="logo-container">
-        <a href="index.html" class="home-link">
-          <img src="logo.png" alt="Logo" class="logo-image" />
-        </a>
-      </div>
-      <nav class="site-navigation">
-        <ul>
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="tasks.html" class="nav-link">Tasks</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-          <li><a href="muse.html" class="nav-link">Muse</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main id="main-content-about">
-      <div class="card">
-        <article id="about-article">
-          <section id="about-section">
-            <div class="top-row">
-              <div class="left-column-about">
-                <img src="me.jpg" alt="A picture of me" id="about-image" />
-              </div>
-              <div class="right-column-about">
-                <h4>Biography</h4>
-                <p id="p1-about">
-                  Hi there! I'm Ruhama, an enthusiastic junior software engineer
-                  based in the vibrant city of Addis Ababa, Ethiopia. With a
-                  deep-rooted passion for technology and innovation, I've
-                  embarked on a journey to make a significant impact in the tech
-                  world.
-                </p>
-                <h4>Experience</h4>
-                <p>
-                  My journey in software engineering began during my university
-                  years where I engaged in various challenging projects. These
-                  projects ranged from developing small-scale web applications
-                  to participating in collaborative software development,
-                  providing me with a solid foundation in coding, teamwork, and
-                  project management.
-                </p>
-              </div>
-            </div>
-            <hr class="about-section-divider" />
-            <div class="bottom-row">
-              <div class="column">
-                <h3>Achievements</h3>
-                <p>
-                  I've successfully led a team to victory in a national coding
-                  competition, where we developed a novel application addressing
-                  local community needs. This experience not only honed my
-                  technical skills but also enhanced my leadership and strategic
-                  thinking abilities.
-                </p>
-              </div>
-              <div class="column">
-                <h3>Awards</h3>
-                <p>
-                  In recognition of my academic and extracurricular dedication,
-                  I was awarded the 'Excellence in Innovation' award by my
-                  university. I've also received accolades from various tech
-                  communities for my contributions to open-source projects.
-                </p>
-              </div>
-              <div class="column">
-                <h3>Hobbies</h3>
-                <p>
-                  When I'm not coding, I immerse myself in the world of
-                  literature, exploring the realms of fiction and philosophy.
-                  I'm also an enthusiast of cinema, particularly fond of the
-                  storytelling and cinematography of early 2000's movies.
-                </p>
-              </div>
-              <div class="column">
-                <h3>Invitation</h3>
-                <p>
-                  I am always on the lookout for new challenges and
-                  collaborations in the tech space. Whether it's a start-up
-                  project, a community initiative, or a tech talk, I'm excited
-                  to connect and share ideas. Feel free to reach out for a chat
-                  or collaboration!
-                </p>
-              </div>
-            </div>
-          </section>
-        </article>
+  <body class="bg-light">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm"
+      style="padding-top: 1rem; padding-bottom: 1rem"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="logo.png" alt="Logo" height="48" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item px-2">
+              <a class="nav-link text-dark" href="index.html">Home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-dark" href="about.html">About</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-dark" href="tasks.html">Tasks</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-dark" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-dark" href="muse.html">Muse</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container">
+      <div class="custom-card">
+        <div class="row">
+          <div class="col-md-6 p-5">
+            <img src="me.jpg" alt="A picture of me" class="img-fluid rounded" />
+          </div>
+          <div class="col-md-6 d-flex flex-column justify-content-center p-3">
+            <h4>Biography</h4>
+            <p>
+              Hi there! I'm Ruhama, an enthusiastic junior software engineer
+              based in the vibrant city of Addis Ababa, Ethiopia. With a
+              deep-rooted passion for technology and innovation, I've embarked
+              on a journey to make a significant impact in the tech world.
+            </p>
+            <h4>Experience</h4>
+            <p>
+              My journey in software engineering began during my university
+              years where I engaged in various challenging projects. These
+              projects ranged from developing small-scale web applications to
+              participating in collaborative software development, providing me
+              with a solid foundation in coding, teamwork, and project
+              management.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Achievements</h3>
+            <p>
+              I've successfully led a team to victory in a national coding
+              competition, where we developed a novel application addressing
+              local community needs. This experience not only honed my technical
+              skills but also enhanced my leadership and strategic thinking
+              abilities.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h3>Awards</h3>
+            <p>
+              In recognition of my academic and extracurricular dedication, I
+              was awarded the 'Excellence in Innovation' award by my university.
+              I've also received accolades from various tech communities for my
+              contributions to open-source projects.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h3>Hobbies</h3>
+            <p>
+              When I'm not coding, I immerse myself in the world of literature,
+              exploring the realms of fiction and philosophy. I'm also an
+              enthusiast of cinema, particularly fond of the storytelling and
+              cinematography of early 2000's movies.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h3>Invitation</h3>
+            <p>
+              I am always on the lookout for new challenges and collaborations
+              in the tech space. Whether it's a start-up project, a community
+              initiative, or a tech talk, I'm excited to connect and share
+              ideas. Feel free to reach out for a chat or collaboration!
+            </p>
+          </div>
+        </div>
       </div>
     </main>
 
-    <footer class="site-footer">
-      <div class="social-media-links">
-        <a
-          href="https://t.me/rurudaya"
-          class="telegram-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="telegram-icon.jpg" alt="Telegram" class="social-icon" />
-        </a>
-        <a
-          href="https://github.com/ruhamayohannes"
-          class="github-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="github-icon.jpg" alt="GitHub" class="social-icon" />
-        </a>
-        <a
-          href="https://X.com/rurudaya"
-          class="x-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="x-icon.png" alt="X Profile" class="social-icon" />
-        </a>
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <div class="mb-3 d-flex justify-content-center">
+          <a
+            href="https://t.me/rurudaya"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mx-2"
+          >
+            <img src="telegram-icon.jpg" alt="Telegram" height="24" />
+          </a>
+          <a
+            href="https://github.com/ruhamayohannes"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mx-2"
+          >
+            <img src="github-icon.jpg" alt="GitHub" height="24" />
+          </a>
+          <a
+            href="https://X.com/rurudaya"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mx-2"
+          >
+            <img src="x-icon.png" alt="X Profile" height="24" />
+          </a>
+        </div>
+        <p>&copy; 2023 Ruhama Yohannes, All rights reserved.</p>
       </div>
-      <p class="copyright-text">
-        &copy; 2023 Ruhama Yohannes, All rights reserved.
-      </p>
     </footer>
+
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/script.js"></script>
   </body>
 </html>
